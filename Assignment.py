@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
     scraped_data = scrape_products(new_url,num_pages_to_scrape)
 
-    with open("products788.csv", "w", newline="", encoding="utf-8") as csvfile:
+    with open("products.csv", "w", newline="", encoding="utf-8") as csvfile:
         fieldnames = ["Product URL", "Product Name", "Product Price", "Rating", "Number of Reviews",
                       "Description", "ASIN", "Product Description", "Manufacturer"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
