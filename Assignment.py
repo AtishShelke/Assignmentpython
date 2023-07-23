@@ -55,7 +55,7 @@ def scrape_products(url, pages):
 if __name__ == "__main__":
     website_url = "https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_1"  
     new_url =  website_url[:-1]
-    num_pages_to_scrape = 2  # Reduced for demonstration purposes
+    num_pages_to_scrape = 20  
 
     scraped_data = scrape_products(new_url,num_pages_to_scrape)
 
